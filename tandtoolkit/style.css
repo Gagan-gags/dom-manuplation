@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2;
+}
+
+
+li{
+    list-style-type: none;
+}
+#loadMore {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+.load-more-btn button {
+    background: #faa635;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    padding: 10px 30px;
+    border: 0;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    margin: auto;
+}
+.load-more-btn button:hover {
+    background-color: #042a63;
+}
+
+section{
+    padding: 50px 0;
+    height: 100%;
+}
+.spinner-border{
+    margin-left: 10px;
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.form-group {
+    position: relative;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+a{
+    transition: all 0.3s;
+    outline: none;
+}
+a:hover{
+    color: #faa635 !important;
+}
+
+#posts {
+    width: 400px;
+}
+#posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    gap: 25px;
+}
+
+#msg {
+    color: red;
+}
+textarea{
+    height: 100px;
+    resize: none;
+}
+label{
+    font-weight: 600;
+}
+.input-file-trigger , .btn-dark{
+    display: block;
+    padding: 10px 30px;
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.input-file {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+#showOrHide{
+    display: none;
+}
+.cardshow{
+    transition: opacity 1s ease-out;
+}
+.favorite {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.favorite.red{
+    color: red;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logo{
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+}
+.navBar {
+    display: flex;
+    align-items: center;
+}
+.nav.loginBtn li a:hover{
+    background: #000000;
+    color: #fff !important;
+    outline: none;
+    border-color: #000000 !important;
+}
+.form-control{
+    height: 45px;
+}
+
+.form-card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    mix-blend-mode: multiply;
+}
+
+.form-card::after, 
+.form-card::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    background: #6d757d;
+    /* border-radius: 100%; */
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+}
+.form-card::before{
+    bottom: -10px;
+    right: -10px;
+    top: auto;
+    left: auto;
+}
